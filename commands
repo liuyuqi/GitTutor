@@ -1,0 +1,26 @@
+git config --global user.name "liuyuqi"
+git config --global user.email liuyuqi.crh@gmail.com
+git config --global core.editor vim
+git config --global merge.tool vimdiff
+
+到项目所在根目录：git init
+git clone https://github.com/.../.../....git
+
+git status
+
+添加一个文件：git add file
+(add之前的更改才会被提交)
+
+提交：git commit -m 'blablabla'
+删除一个文件：git rm
+取消改动：git checkout blabla.c  (该文件被复原至上一次提交的状态)
+
+分支：git branch liuyuqi
+删除分支：git branch -d liuyuqi
+切换分支：git checkout liuyuqi
+查看远程仓库：git remote -v
+查看分支：git branch (-v)
+
+提交到服务器：git push origin liuyuqi
+pull: git pull origin liuyuqi(抓取远程数据并与本地数据合并)
+fetch: git fetch origin (只从远程服务器抓取数据，并不与本地数据进行merge)
